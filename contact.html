@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>ContactForm</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="left-header">
+                    <div class="logo-container">
+                        <a href="index.html#home"><h1>Remya P R</h1></a>
+                    </div>
+                </div>
+                <div class="right-header">
+                    <div class="nav-container">
+                        <a href="/index.html#home">Home</a>
+                        <a href="/index.html#about">About</a>
+                        <a href="/index.html#project">Projects</a>
+                        <a href="#">Contact </a>
+                    </div>
+                    <div class="nav-container-mobile">
+                        <input type="checkbox" id="toggle-icon" class="toggle-icon" >
+                        <label for="toggle-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#5f6368"
+                            >
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg>
+                        </label>
+
+                        <div class="nav-container-mobile-items">
+                            <a href="/index.html#home">Home</a>
+                            <a href="/index.html#about">About</a>
+                            <a href="/index.html#project">Projects</a>
+                            <a href="#">Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-contact-container">
+                <h2>Let's Connect!</h2>
+
+                <form action="index.html" method="post" autocomplete="on" title="contact form" aria-label="user details">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name" required name="name" >
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email id" required >
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            pattern="[0-9]{10}"
+                            required
+                        >
+
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" name="dob" id="dob" required >
+                        <label for="education">Education:</label>
+                        <select name="education" id="education">
+                            <option value="select">select</option>
+                            <optgroup label="undergraduate">
+                                <option value="bachelor">Bachelor</option>
+                            </optgroup>
+                            <optgroup label="postgraduate">
+                                <option value="master">Master</option>
+                                <option value="phd">Doctorate (PhD)</option>
+                            </optgroup>
+                        </select>
+                        <div class="gender-group">
+                            <label class="gender-label">Gender:</label>
+                            <div class="input-gender-group">
+                                <input type="radio" name="gender" id="male" value="male" >
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female" checked >
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="other" value="other" >
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                        <div class="aboutus-group">
+                            <label class="aboutus-label">How did you hear about us : </label>
+                            <div class="input-aboutus-group">
+                                <input type="checkbox" name="insta" id="insta" >
+                                <label for="insta">Instagram</label>
+                                <input type="checkbox" name="youtube" id="youtube">
+                                <label for="youtube">Youtube</label>
+                                <input type="checkbox" name="fb" id="fb" >
+                                <label for="fb">Fb</label>
+                            </div>
+                        </div>
+
+                        <label for="msg">Any message for us?</label>
+                        <textarea name="msg" id="msg" rows="4" placeholder="write your message here"></textarea>
+
+                       <div class="button">
+                        <input type="submit" value="Submit" class="submit-button" >
+                       </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            &copy; All rights reserved
+            <p>Published on <time datetime="2024-11-11">2024</time></p>
+            <address>place:Thrissur PH:00236541</address>
+        </footer>
+    </body>
+</html>
